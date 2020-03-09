@@ -17,8 +17,7 @@ import org.springframework.web.context.WebApplicationContext;
  * assim será criado para cada sessão uma instância da aplicação. */
 
 @Component
-@Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS) // - proxy empresarial
-																								// bloqueando.
+@Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS) // - proxy empresarial																						// bloqueando.
 public class CarrinhoCompras implements Serializable {
 
 	private static final long serialVersionUID = 1L;
